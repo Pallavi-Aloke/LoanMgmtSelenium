@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LoanAppSuite" verbose="1" >
+
+<parameter name = "branch" value = "Paris"/>
+<parameter name = "branchAdmin" value = "admin"/>
+<parameter name = "branchpassword" value = "paloke0802"/>
+
+<parameter name = "user" value = "bpitt"/>
+<parameter name = "password" value = "bradpwd"/>
+
+
+<test name="RegressionTest1" >
+
+<classes>
+
+<class name="Users">
+
+<methods>
+
+<include name="AddUser" />
+
+</methods>
+
+</class>
+
+</classes>
+
+</test>
+
+</suite>
